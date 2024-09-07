@@ -3,7 +3,7 @@ use std::{
     net::{Ipv4Addr, SocketAddr, TcpListener, TcpStream},
 };
 
-use simple_http::http::request::HttpRequest;
+use rust_file_server::http::request::HttpRequest;
 
 fn create_socket() -> SocketAddr {
     SocketAddr::new(std::net::IpAddr::V4(Ipv4Addr::LOCALHOST), 5500)
